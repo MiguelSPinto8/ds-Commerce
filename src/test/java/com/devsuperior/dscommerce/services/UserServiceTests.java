@@ -103,7 +103,7 @@ public class UserServiceTests {
 		UserService spyUserService= Mockito.spy(service);
 		Mockito.doReturn(user).when(spyUserService).authenticated();
 		
-		UserDTO result =service.getMe();
+		UserDTO result = spyUserService.getMe();
 		
 		Assertions.assertNotNull(result);
 		Assertions.assertEquals(result.getEmail(), existingUsername);

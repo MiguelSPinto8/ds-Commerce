@@ -42,6 +42,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		<dependency>
+  			<groupId>net.bytebuddy</groupId>
+  			<artifactId>byte-buddy</artifactId>
+ 			<version>LATEST</version>
+		</dependency>
 		
 
 		<dependency>
@@ -84,6 +89,8 @@
 						<exclude>com/devsuperior/dscommerce/dto/**</exclude>
 						<exclude>com/devsuperior/dscommerce/controllers/handlers/**</exclude>
 						<exclude>com/devsuperior/dscommerce/services/exceptions/**</exclude>
+						<exclude>com/devsuperior/dscommerce/util/**</exclude>
+						<exclude>com/devsuperior/dscommerce/controllers/**</exclude>
 					</excludes>
 				</configuration>
 				<executions>

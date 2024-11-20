@@ -28,7 +28,7 @@ public class AuthServiceTests {
 	void setUp() throws Exception{
 		admin = UserFactory.createAdminUser();
 		selfClient = UserFactory.createCustomClientUser(1L, "Bob");
-		otherClient = UserFactory.createCustomClientUser(1L, "Bob");
+		otherClient = UserFactory.createCustomClientUser(2L, "Ana");
 	}
 	
 	@Test
